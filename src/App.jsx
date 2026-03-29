@@ -1,11 +1,13 @@
-
 import './App.css'
+import Navbar from './components/Navbar/Navbar'
 
 function App() {
 
   return (
     <>
-      DigiTools
+      <header className='shadow'>
+        <Navbar />
+      </header>
     </>
   )
 }
