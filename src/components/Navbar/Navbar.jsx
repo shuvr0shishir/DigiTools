@@ -27,11 +27,13 @@ const Navbar = () => {
                     </ul>
                 </div>
 
-                <div className="navbar-end flex gap-2">
-                    <button className="p-1 cursor-pointer"> <i class="fa-solid fa-cart-shopping"></i></button>
-                    <div className='flex gap-1 flex-col sm:flex-row sm:gap-2'>
-                        <button className="font-semibold cursor-pointer hover:bg-gray-200 px-2 rounded-xl transition duration-200">Login</button>
-                        <button className="p-1 sm:py-3 sm:px-4 bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-4xl text-white font-semibold cursor-pointer">Get Started</button>
+                <div className="navbar-end flex gap-3">
+                    <button className="p-1 cursor-pointer hover:scale-105 transition-all duration-200"> <i class="fa-solid fa-cart-shopping"></i></button>
+                    <div className='flex gap-1 flex-col sm:flex-row sm:gap-3'>
+                        <button className="font-semibold cursor-pointer px-2 rounded-xl hover:scale-105 transition-all duration-200">Login</button>
+                        <button className="p-1 sm:py-3 sm:px-4 rounded-full text-white font-semibold 
+                                            bg-linear-to-r from-[#4F39F6] to-[#9514FA] 
+                                            hover:brightness-140 transition-all duration-200 hover:shadow hover:scale-103 cursor-pointer">Get Started</button>
                     </div>
 
                 </div>
