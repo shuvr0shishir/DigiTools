@@ -11,3 +11,11 @@ body {
 .gradient-bg {
   background: linear-gradient(to right, #4F39F6, #9514FA);
 }
+
+.color-p {
+  color: #627382;
+}
+
+.color-h {
+  color: #101727;
+}
