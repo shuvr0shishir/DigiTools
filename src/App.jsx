@@ -21,3 +21,5 @@ function App() {
 }
 
 export default App
+
+//HoverEffect: hover:brightness-140 hover:scale-105 transition-all duration-300 ease-in-out 

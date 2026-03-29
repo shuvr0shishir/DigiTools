@@ -16,7 +16,7 @@ const DTSectionHeader = () => {
 
                 <button
                     onClick={() => setActive("products")}
-                    className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ease-in-out
+                    className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ease-in-out hover:brightness-140 hover:scale-105
                         ${active === "products"
                             ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white shadow"
                             : "text-gray-600"
@@ -26,10 +26,9 @@ const DTSectionHeader = () => {
                     Products
                 </button>
 
-                {/* Cart */}
                 <button
                     onClick={() => setActive("cart")}
-                    className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ease-in-out
+                    className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ease-in-out hover:brightness-140 hover:scale-105
                         ${active === "cart"
                             ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white shadow"
                             : "text-gray-600"
