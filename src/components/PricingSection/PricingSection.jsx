@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 
 const PricingSection = () => {
     const [selected, setSelected] = useState('Pro');
-    console.log(selected);
 
     return (
         <section className='PricingSection container mx-auto my-10 sm:my-30'>
