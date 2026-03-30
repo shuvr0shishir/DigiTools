@@ -1,6 +1,7 @@
 import './App.css'
 import Banner from './components/Banner/Banner'
 import DigitalToolsSection from './components/DigitalToolsSection/DigitalToolsSection'
+import FooterSection from './components/FooterSection/FooterSection'
 import GetStartedSection from './components/GetStartedSection/GetStartedSection'
 import Navbar from './components/Navbar/Navbar'
 import PricingSection from './components/PricingSection/PricingSection'
@@ -22,6 +23,9 @@ function App() {
         <PricingSection />
         <TransformSection />
       </main>
+      <footer className='bg-[#101727]'>
+        <FooterSection />
+      </footer>
     </>
   )
 }
