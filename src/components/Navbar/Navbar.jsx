@@ -28,7 +28,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="navbar-end flex gap-3">
-                    <button className="p-1 cursor-pointer hover:scale-105 transition-all duration-200"> <i class="fa-solid fa-cart-shopping"></i></button>
+                    <button className="p-1 cursor-pointer hover:scale-105 transition-all duration-200"> <i className="fa-solid fa-cart-shopping"></i></button>
                     <div className='flex gap-1 flex-col sm:flex-row sm:gap-3'>
                         <button className="font-semibold cursor-pointer px-2 rounded-xl hover:scale-105 transition-all duration-200">Login</button>
                         <button className="p-1 sm:py-3 sm:px-4 rounded-full text-white font-semibold 

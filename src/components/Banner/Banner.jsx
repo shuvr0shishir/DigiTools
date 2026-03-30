@@ -3,7 +3,7 @@ import bannerImg from '../../assets/banner.png';
 
 const Banner = () => {
     return (
-        <section className=" container mx-auto bg-base-100 my-5 sm:my-[85px]">
+        <section className=" container mx-auto bg-base-100 my-5 sm:my-21.25">
             <div className="banner-contant flex justify-between items-center  flex-col sm:flex-row-reverse gap-4">
                 <div className='banner-img text-center '>
                     <img
@@ -18,9 +18,9 @@ const Banner = () => {
                     <div className=' py-2 px-4 bg-[#E1E7FF] rounded-4xl w-fit hover:shadow hover:scale-102 transition-all duration-300 ease-in-out hover:brightness-110'>
                         <div className="flex gap-2 items-center">
                             {/* ripple dot */}
-                            <div class="w-4 h-4 rounded-full bg-purple-400/30 flex items-center justify-center">
-                                <div class="w-2.5 h-2.5 rounded-full bg-purple-400/80 flex items-center justify-center">
-                                    <div class="w-1.5 h-1.5 rounded-full bg-purple-700"></div>
+                            <div className="w-4 h-4 rounded-full bg-purple-400/30 flex items-center justify-center">
+                                <div className="w-2.5 h-2.5 rounded-full bg-purple-400/80 flex items-center justify-center">
+                                    <div className="w-1.5 h-1.5 rounded-full bg-purple-700"></div>
                                 </div>
                             </div>
 
@@ -50,7 +50,7 @@ const Banner = () => {
                                             border-2 border-purple-600 text-purple-600 font-semibold 
                                             hover:bg-purple-500 hover:text-white 
                                             transition-all duration-200 hover:scale-105 ">
-                            <span className="text-lg"><i class="fa-solid fa-play"></i></span>
+                            <span className="text-lg"><i className="fa-solid fa-play"></i></span>
 
                             Watch Demo
                         </button>

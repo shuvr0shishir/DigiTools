@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
 
-const DTSectionHeader = () => {
-    const [active, setActive] = useState('products')
+
+const DTSectionHeader = ({ tab, setTab }) => {
+
 
     return (
         <div className='SectionHeader space-y-4 mb-10 text-center'>
-            <h2 className='color-h text-5xl font-extrabold'>Premium Digital Tools</h2>
+            <h2 className='color-h text-3xl sm:text-5xl font-extrabold'>Premium Digital Tools</h2>
 
             <p className='color-p'>
                 Choose from our curated collection of premium digital products designed<br />
@@ -15,9 +15,9 @@ const DTSectionHeader = () => {
             <div className="flex items-center gap-2 bg-gray-100 p-1 rounded-full w-fit mx-auto font-bold">
 
                 <button
-                    onClick={() => setActive("products")}
+                    onClick={() => setTab("products")}
                     className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ease-in-out hover:brightness-140 hover:scale-105
-                        ${active === "products"
+                        ${tab === "products"
                             ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white shadow"
                             : "text-gray-600"
                         }`
@@ -27,9 +27,9 @@ const DTSectionHeader = () => {
                 </button>
 
                 <button
-                    onClick={() => setActive("cart")}
+                    onClick={() => setTab("cart")}
                     className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ease-in-out hover:brightness-140 hover:scale-105
-                        ${active === "cart"
+                        ${tab === "cart"
                             ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white shadow"
                             : "text-gray-600"
                         }`

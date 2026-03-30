@@ -20,7 +20,7 @@ const StatsSection = () => {
                 <div className="w-px h-16 bg-white/30"></div>
 
                 <div className="flex-1">
-                    <h2 className="text-3xl sm:text-5xl font-extrabold transition-all duration-300 ease-in-out hover:scale-107"><i class="fa-regular fa-star text-3xl align-middle"></i>4.9</h2>
+                    <h2 className="text-3xl sm:text-5xl font-extrabold transition-all duration-300 ease-in-out hover:scale-107"><i className="fa-regular fa-star text-3xl align-middle"></i>4.9</h2>
                     <p className="mt-3 font-medium">Rating</p>
                 </div>
             </div>
