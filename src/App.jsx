@@ -3,6 +3,7 @@ import Banner from './components/Banner/Banner'
 import DigitalToolsSection from './components/DigitalToolsSection/DigitalToolsSection'
 import GetStartedSection from './components/GetStartedSection/GetStartedSection'
 import Navbar from './components/Navbar/Navbar'
+import PricingSection from './components/PricingSection/PricingSection'
 import StatsSection from './components/StatsSection/StatsSection'
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
         <StatsSection />
         <DigitalToolsSection />
         <GetStartedSection />
-
+        <PricingSection />
       </main>
     </>
   )

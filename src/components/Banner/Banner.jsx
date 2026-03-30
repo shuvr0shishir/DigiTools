@@ -3,7 +3,7 @@ import bannerImg from '../../assets/banner.png';
 
 const Banner = () => {
     return (
-        <section className=" container mx-auto bg-base-100 my-5 sm:my-21.25">
+        <section className="Banner container mx-auto bg-base-100 my-5 sm:my-21.25">
             <div className="banner-contant flex justify-between items-center  flex-col sm:flex-row-reverse gap-4">
                 <div className='banner-img text-center '>
                     <img

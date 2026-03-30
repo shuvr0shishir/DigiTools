@@ -6,7 +6,7 @@ import rocketImg from '../../assets/rocket.png'
 const GetStartedSection = () => {
     return (
         <section className="GetStartedSection bg-[#F9FAFC]">
-            <div className="container mx-auto text-center py-30">
+            <div className="container mx-auto text-center py-10 sm:py-30">
 
                 <h2 className="color-h text-3xl sm:text-5xl font-extrabold mb-4">
                     Get Started In 3 Steps
