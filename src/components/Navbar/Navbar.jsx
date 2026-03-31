@@ -1,7 +1,7 @@
 import React from 'react';
 import NavLinks from './NavLinks';
 
-const Navbar = () => {
+const Navbar = ({ cart }) => {
     return (
         <nav>
             <div className="container mx-auto navbar bg-base-100">
@@ -28,7 +28,14 @@ const Navbar = () => {
                 </div>
 
                 <div className="navbar-end flex gap-3">
-                    <button className="p-1 rounded-full cursor-pointer hover:scale-105 transition-all duration-200"> <i className="fa-solid fa-cart-shopping"></i></button>
+                    <button className="p-1 rounded-full cursor-pointer hover:scale-105 transition-all duration-200 relative">
+                        <i className="fa-solid fa-cart-shopping"></i>
+                        {
+                            cart.length > 0
+                            &&
+                            <span className="absolute -top-1.5 -right-0.5 w-3.5 h-3.5 flex-center rounded-full bg-red-600 text-white text-[9px] font-bold">{cart.length}</span>
+                        }
+                    </button>
                     <div className='flex gap-1 flex-col sm:flex-row sm:gap-3'>
                         <button className="font-semibold cursor-pointer px-2 rounded-xl hover:scale-105 transition-all duration-200">Login</button>
                         <button className="p-1 sm:py-3 sm:px-4 rounded-full text-white font-semibold 

@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './App.css'
 import Banner from './components/Banner/Banner'
 import DigitalToolsSection from './components/DigitalToolsSection/DigitalToolsSection'
@@ -8,17 +9,29 @@ import PricingSection from './components/PricingSection/PricingSection'
 import StatsSection from './components/StatsSection/StatsSection'
 import TransformSection from './components/TransformSection/TransformSection'
 
+const fetchProducts = async () => {
+  const res = await fetch('/products-data.json');
+  return res.json();
+}
+
+
+
 function App() {
+  const [cart, setCart] = useState([]);
 
   return (
     <>
       <header className='shadow'>
-        <Navbar />
+        <Navbar cart={cart} />
       </header>
       <main>
         <Banner />
         <StatsSection />
-        <DigitalToolsSection />
+        <DigitalToolsSection
+          fetchProducts={fetchProducts}
+          cart={cart}
+          setCart={setCart}
+        />
         <GetStartedSection />
         <PricingSection />
         <TransformSection />

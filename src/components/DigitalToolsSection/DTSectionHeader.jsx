@@ -1,6 +1,6 @@
 
 
-const DTSectionHeader = ({ tab, setTab }) => {
+const DTSectionHeader = ({ tab, setTab, cart }) => {
 
 
     return (
@@ -35,7 +35,8 @@ const DTSectionHeader = ({ tab, setTab }) => {
                         }`
                     }
                 >
-                    Cart (<span>2</span>)
+                    Cart {cart.length > 0 && <span>({cart.length})</span>}
+
                 </button>
 
             </div>
