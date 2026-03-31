@@ -9,11 +9,11 @@ import PricingSection from './components/PricingSection/PricingSection'
 import StatsSection from './components/StatsSection/StatsSection'
 import TransformSection from './components/TransformSection/TransformSection'
 
+
 const fetchProducts = async () => {
   const res = await fetch('/products-data.json');
   return res.json();
 }
-
 
 
 function App() {

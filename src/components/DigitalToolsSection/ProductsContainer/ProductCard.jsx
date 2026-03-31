@@ -1,5 +1,6 @@
 import React from 'react';
 import ListIteam from './ListIteam';
+import { toast } from 'react-toastify';
 
 
 const ProductCard = ({ product, cart, setCart }) => {
@@ -7,8 +8,9 @@ const ProductCard = ({ product, cart, setCart }) => {
 
     function handleBuyNow() {
         setCart([...cart, product]);
-
+        toast(`${title} Added to Cart.`);
     };
+
     return (
         <div className={`ProductsCard card relative hover:shadow-xl hover:scale-101 transition-all ease-in-out color-h border-2 border-[#F2F2F2] rounded-2xl bg-white`}>
 

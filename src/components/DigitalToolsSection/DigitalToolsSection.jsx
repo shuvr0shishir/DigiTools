@@ -12,11 +12,11 @@ const DigitalToolsSection = ({ fetchProducts, cart, setCart }) => {
 
     return (
 
-        <section className='DigitalToolsSection container mx-auto my-10 min-h-[170vh] sm:my-30'>
+        <section className='DigitalToolsSection container mx-auto my-10  sm:my-30'>
             <DTSectionHeader tab={tab} setTab={setTab} cart={cart} />
 
             {tab === 'products' &&
-                <Suspense fallback={<span className="loading loading-infinity loading-xl text-primary block mx-auto"></span>}>
+                <Suspense fallback={<span className="loading loading-infinity loading-xl text-primary block mx-auto min-h-[50vh]"></span>}>
                     <ProductsContainer
                         productsPromise={productsPromise}
                         cart={cart}
@@ -27,10 +27,10 @@ const DigitalToolsSection = ({ fetchProducts, cart, setCart }) => {
 
 
             {tab === 'cart' &&
-                <Suspense fallback={<span className="loading loading-infinity loading-xl text-primary block mx-auto"></span>}>
-                    <CartContainer
-                    />
-                </Suspense>
+                <CartContainer
+                    cart={cart}
+                    setCart={setCart}
+                />
             }
 
         </section >
