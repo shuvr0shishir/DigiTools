@@ -15,7 +15,11 @@ const ProductCard = ({ product, cart, setCart }) => {
         <div className={`ProductsCard card relative hover:shadow-xl hover:scale-101 transition-all ease-in-out color-h border-2 border-[#F2F2F2] rounded-2xl bg-white`}>
 
             {/* badge */}
-            <div className="bg-[#FEF3C6] text-[#BB4D00] absolute py-1.5 px-3  font-medium text-sm rounded-2xl top-3 right-3">
+            <div className={`
+                ${badge === 'Best Seller' && 'bg-[#FEF3C6] text-[#BB4D00]'} 
+                ${badge === 'Popular' && 'bg-[#E1E7FF] text-purple-700'} 
+                ${badge === 'New' && 'bg-[#DBFCE7] text-[#0A883E]'} 
+                absolute py-1.5 px-3  font-medium text-sm rounded-2xl top-3 right-3`}>
                 {badge}
             </div>
 

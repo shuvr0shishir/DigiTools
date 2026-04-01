@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import './App.css'
+import { useState } from 'react'
 import Banner from './components/Banner/Banner'
 import DigitalToolsSection from './components/DigitalToolsSection/DigitalToolsSection'
 import FooterSection from './components/FooterSection/FooterSection'
@@ -16,18 +16,25 @@ const fetchProducts = async () => {
 }
 
 
+
 function App() {
+  const [tab, setTab] = useState('products');
   const [cart, setCart] = useState([]);
 
   return (
     <>
       <header className='shadow'>
-        <Navbar cart={cart} />
+        <Navbar
+          cart={cart}
+          setTab={setTab}
+        />
       </header>
       <main>
         <Banner />
         <StatsSection />
         <DigitalToolsSection
+          tab={tab}
+          setTab={setTab}
           fetchProducts={fetchProducts}
           cart={cart}
           setCart={setCart}

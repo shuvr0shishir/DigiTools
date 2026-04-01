@@ -1,14 +1,11 @@
 import React, { Suspense } from 'react';
 import DTSectionHeader from './DTSectionHeader';
-import { useState } from 'react';
 import ProductsContainer from './ProductsContainer/ProductsContainer';
 import CartContainer from './CartContainer/CartContainer';
 
 
-const DigitalToolsSection = ({ fetchProducts, cart, setCart }) => {
-    const [tab, setTab] = useState('products');
+const DigitalToolsSection = ({ fetchProducts, cart, setCart, tab, setTab }) => {
     const productsPromise = fetchProducts();
-
 
     return (
 
@@ -30,6 +27,7 @@ const DigitalToolsSection = ({ fetchProducts, cart, setCart }) => {
                 <CartContainer
                     cart={cart}
                     setCart={setCart}
+                    setTab={setTab}
                 />
             }
 

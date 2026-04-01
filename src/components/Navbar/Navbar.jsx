@@ -1,7 +1,7 @@
 import React from 'react';
 import NavLinks from './NavLinks';
 
-const Navbar = ({ cart }) => {
+const Navbar = ({ cart, setTab }) => {
     return (
         <nav>
             <div className="container mx-auto navbar bg-base-100">
@@ -28,7 +28,9 @@ const Navbar = ({ cart }) => {
                 </div>
 
                 <div className="navbar-end flex gap-3">
-                    <button className="p-1 rounded-full cursor-pointer hover:scale-105 transition-all duration-200 relative">
+                    <button
+                        onClick={() => setTab("cart")}
+                        className="p-1 rounded-full cursor-pointer hover:scale-105 transition-all duration-200 relative">
                         <i className="fa-solid fa-cart-shopping"></i>
                         {
                             cart.length > 0
