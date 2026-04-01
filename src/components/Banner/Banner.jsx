@@ -6,10 +6,25 @@ const Banner = () => {
         <section className="Banner container mx-auto bg-base-100 my-5 sm:my-21.25">
             <div className="banner-contant flex justify-between items-center  flex-col sm:flex-row-reverse gap-4">
                 <div className='banner-img text-center '>
-                    <img
-                        src={bannerImg}
-                        className="max-w-sm rounded-lg shadow-md"
-                    />
+                    <div className="hover-3d">
+                        {/* content */}
+                        <figure className="max-w-100 rounded-xl">
+                            <img
+                                src={bannerImg}
+                                className="max-w-sm rounded-lg shadow-md"
+                            />
+                        </figure>
+                        {/* 8 empty divs needed for the 3D effect */}
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
                 </div>
 
                 <div className='banner-txt space-y-4'>
