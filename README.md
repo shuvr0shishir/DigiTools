@@ -4,7 +4,9 @@ A modern and user-friendly collection of useful digital tools built to simplify 
 This web application provides multiple utilities in one place, making it efficient and accessible for users.
 
 🔗 Live Demo: https://digitools-by-sk.netlify.app/
+
 🔗 GitHub Repo: https://github.com/shuvr0shishir/DigiTools
+
 ---
 
 ## 📌 Features
