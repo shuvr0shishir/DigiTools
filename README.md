@@ -1,16 +1,31 @@
-# React + Vite
+## DigiTools 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and user-friendly collection of useful digital tools built to simplify everyday tasks.  
+This web application provides multiple utilities in one place, making it efficient and accessible for users.
 
-Currently, two official plugins are available:
+🔗 Live Demo: https://digitools-by-sk.netlify.app/
+🔗 GitHub Repo: https://github.com/shuvr0shishir/DigiTools
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 Features
 
-## React Compiler
+- 🧮 Multiple useful tools in one platform
+- ⚡ Fast and responsive UI
+- 📱 Fully responsive design (Mobile, Tablet, Desktop)
+- 🎯 Simple and clean user experience
+- 🔄 Real-time interaction without page reload
+- 🌐 Deployed using Netlify
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 💻 Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- HTML5
+- CSS3 / Tailwind CSS
+- JavaScript (ES6+)
+- React.js 
+- Netlify (Deployment)
+- Vite
+- Daisyui (Components)
+
+
